@@ -25,5 +25,6 @@ void test_memset()
 
 	if (passed == number) { test_passed(""); }
 	else { test_failed(""); }
+
 	printf(" (%*d / %*d)\n", NBR_PADDING, passed, NBR_PADDING, number);
 }

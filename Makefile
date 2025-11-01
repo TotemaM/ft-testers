@@ -4,13 +4,13 @@ export MAKEFLAGS=--no-print-directory
 
 .PHONY: check all norm libft
 
+all:
+	@ echo "Choose a project and set PDIR variable to the root of the project."
+
 check:
 	@if [ -z "$(PDIR)" ]; then \
 		echo "Set PDIR var to root of the project" && exit 1; \
 	fi
-
-all:
-	@ echo "Choose a project and set PDIR variable to the root of the project."
 
 norm:
 	@ cd $(PDIR) && ! norminette | grep -v "OK"

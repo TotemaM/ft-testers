@@ -12,4 +12,6 @@ int main()
 	test_isprint();
 	test_strlen();
 	test_memset();
+	test_bzero();
+	test_memcpy();
 }

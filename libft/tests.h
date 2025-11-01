@@ -23,5 +23,7 @@ void test_isascii();
 void test_isprint();
 void test_strlen();
 void test_memset();
+void test_bzero();
+void test_memcpy();
 
 #endif //TESTS_H
